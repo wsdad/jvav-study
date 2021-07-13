@@ -1,0 +1,4580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="31">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>14416</ID>
+      <Description>"注意事项！"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <Color>0000FF</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>14419</ID>
+          <Description>"使用此列表需Cheat Engine版本在7.1以上"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>0000FF</Color>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14418</ID>
+          <Description>"进程名AGE_cn.exe若游戏进程名不对是无法使用的"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14465</ID>
+          <Description>"若觉得刷新过慢可进入常规设置把更新时间缩短，但是会提升CPU占用"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>FF0000</Color>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>46</ID>
+      <Description>"给前面□打×激活封緘のグラセスタ解密(使用前激活此项)"</Description>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Activated="1"/>
+      <Color>0000FF</Color>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+{$lua}
+local CryptoKey=readInteger('[AGE_cn.EXE+2D663C]+6B7C8')
+writeIntegerLocal(getAddress("AgeCryptoKey",true),CryptoKey)
+{$asm}
+[DISABLE]
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>14417</ID>
+          <Description>"此项值若不为解密成功勿修改任何项目"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:解密成功
+</DropDownList>
+          <LastState Value="0" RealAddress="057677EC"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>6B7CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>51</ID>
+          <Description>"GP"</Description>
+          <LastState Value="99995094" RealAddress="473990EC"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>394124</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8201</ID>
+          <Description>"铜奖牌"</Description>
+          <LastState Value="900" RealAddress="473990F0"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>394128</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8199</ID>
+          <Description>"银奖牌"</Description>
+          <LastState Value="900" RealAddress="473990F4"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39412C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8200</ID>
+          <Description>"金奖牌"</Description>
+          <LastState Value="900" RealAddress="473990F8"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>394130</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>340</ID>
+          <Description>"制限时间"</Description>
+          <LastState Value="5000" RealAddress="470395B8"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>345F0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>387</ID>
+          <Description>"DANGER（越大越偏左）"</Description>
+          <LastState Value="1" RealAddress="470395C4"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>345FC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1002</ID>
+      <Description>"战斗修改"</Description>
+      <Options moHideChildren="1" moRecursiveSetValue="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>14415</ID>
+          <Description>"------------------------分割线---------------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"综合耐久值"</Description>
+          <LastState Value="17663" RealAddress="473990FC"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>394134</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>56</ID>
+          <Description>"综合耐久值上限"</Description>
+          <LastState Value="17663" RealAddress="47399100"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>394138</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>212</ID>
+          <Description>"战后获得经验"</Description>
+          <LastState Value="0" RealAddress="48ACAB54"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5B8C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>999</ID>
+          <Description>"敌人数量（改0打一下直接结束战斗）"</Description>
+          <LastState Value="0" RealAddress="48ADB0F8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD6130</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1003</ID>
+          <Description>"------------------------分割线---------------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1001</ID>
+          <Description>"敌1"</Description>
+          <LastState Value="0" RealAddress="48ADE44C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD9484</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1004</ID>
+          <Description>"敌2"</Description>
+          <LastState Value="0" RealAddress="48ADE450"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD9488</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1005</ID>
+          <Description>"敌3"</Description>
+          <LastState Value="0" RealAddress="48ADE454"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD948C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1006</ID>
+          <Description>"敌4"</Description>
+          <LastState Value="0" RealAddress="48ADE458"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD9490</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1007</ID>
+          <Description>"敌5"</Description>
+          <LastState Value="0" RealAddress="48ADE45C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD9494</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1008</ID>
+          <Description>"敌6"</Description>
+          <LastState Value="0" RealAddress="48ADE460"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD9498</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1009</ID>
+          <Description>"敌7"</Description>
+          <LastState Value="0" RealAddress="48ADE464"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD949C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1010</ID>
+          <Description>"敌8"</Description>
+          <LastState Value="0" RealAddress="48ADE468"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD94A0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1011</ID>
+          <Description>"敌9"</Description>
+          <LastState Value="0" RealAddress="48ADE46C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD94A4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1012</ID>
+          <Description>"敌10"</Description>
+          <LastState Value="0" RealAddress="48ADE470"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AD94A8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>230</ID>
+      <Description>"掉落修改"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <Color>000000</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>245</ID>
+          <Description>"------------------------分割线---------------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>216</ID>
+          <Description>"掉落结算地址个数"</Description>
+          <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">0:无物品掉落
+1:1个物品掉落
+2:2个物品掉落
+3:3个物品掉落
+4:4个物品掉落
+5:5个物品掉落
+6:6个物品掉落
+7:7个物品掉落
+8:8个物品掉落
+9:9个物品掉落
+10:10个物品掉落
+</DropDownList>
+          <LastState Value="0" RealAddress="48ACAE78"/>
+          <Color>FF0000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5EB0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14469</ID>
+          <Description>"------------------------分割线---------------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>222</ID>
+          <Description>"掉落第1格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB58"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5B90</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>223</ID>
+          <Description>"掉落第2格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB5C"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5B94</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>224</ID>
+          <Description>"掉落第3格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB60"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5B98</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>233</ID>
+          <Description>"掉落第4格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB64"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5B9C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>234</ID>
+          <Description>"掉落第5格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB68"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5BA0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>235</ID>
+          <Description>"掉落第6格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB6C"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5BA4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>236</ID>
+          <Description>"掉落第7格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB70"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5BA8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>237</ID>
+          <Description>"掉落第8格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB74"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5BAC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>238</ID>
+          <Description>"掉落第9格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB78"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5BB0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>239</ID>
+          <Description>"掉落第10格道具代码"</Description>
+          <DropDownListLink>道具列表·全</DropDownListLink>
+          <LastState Value="0" RealAddress="48ACAB7C"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>1AC5BB4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14420</ID>
+      <Description>"道具"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>14421</ID>
+          <Description>"人物道具"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>0000FF</Color>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>14422</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14424</ID>
+              <Description>"背包道具编号"</Description>
+              <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">0:在此输入编号
+</DropDownList>
+              <LastState Value="0" RealAddress="00AE042C"/>
+              <Color>FF0000</Color>
+              <VariableType>4 Bytes</VariableType>
+              <Address>AGE_cn.EXE+42C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14506</ID>
+              <Description>"编号确定方法："</Description>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14507</ID>
+              <Description>"①找到要修改的道具单击左键弹出选中选项"</Description>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>155</ID>
+              <Description>"②将此项数值输入编号"</Description>
+              <LastState Value="0" RealAddress="493F1EE0"/>
+              <Color>000000</Color>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>AGE_cn.EXE+2D663C</Address>
+              <Offsets>
+                <Offset>23ECF18</Offset>
+                <Offset>6A344</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14426</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14429</ID>
+              <Description>"持有者"</Description>
+              <DropDownListLink>持有者列表</DropDownListLink>
+              <LastState Value="0" RealAddress="473BB3FC"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+4*[AGE_cn.EXE+42C]+3B6434</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14433</ID>
+              <Description>"道具代码"</Description>
+              <DropDownListLink>道具列表·全</DropDownListLink>
+              <LastState Value="0" RealAddress="4739DF3C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+4*[AGE_cn.EXE+42C]+398F74</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14435</ID>
+              <Description>"装备技能成长值"</Description>
+              <LastState Value="0" RealAddress="4746B07C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+4*[AGE_cn.EXE+42C]+4660B4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14463</ID>
+              <Description>"道具状态"</Description>
+              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:已鉴定
+1:未鉴定
+2:纳品
+4:已装备
+6:纳品已装备
+</DropDownList>
+              <LastState Value="0" RealAddress="473A7B7C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+4*[AGE_cn.EXE+42C]+3A2BB4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14427</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14437</ID>
+              <Description>"封缄强化"</Description>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14436</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14443</ID>
+              <Description>"HP"</Description>
+              <LastState Value="0" RealAddress="474095FC"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+404634</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14444</ID>
+              <Description>"物攻"</Description>
+              <LastState Value="0" RealAddress="47409600"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+404638</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14445</ID>
+              <Description>"物防"</Description>
+              <LastState Value="0" RealAddress="47409604"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+40463C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14446</ID>
+              <Description>"魔攻"</Description>
+              <LastState Value="0" RealAddress="47409608"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+404640</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14447</ID>
+              <Description>"魔防"</Description>
+              <LastState Value="0" RealAddress="4740960C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+404644</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14448</ID>
+              <Description>"命中"</Description>
+              <LastState Value="0" RealAddress="47409610"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+404648</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14449</ID>
+              <Description>"回避"</Description>
+              <LastState Value="0" RealAddress="47409614"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+40464C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14450</ID>
+              <Description>"效果"</Description>
+              <LastState Value="0" RealAddress="47409618"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+404650</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14451</ID>
+              <Description>"回数"</Description>
+              <LastState Value="0" RealAddress="4740961C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+24*[AGE_cn.EXE+42C]+404654</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14438</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14454</ID>
+              <Description>"装备波动值（效果存档 读档不重置）"</Description>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14452</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14455</ID>
+              <Description>"HP"</Description>
+              <LastState Value="0" RealAddress="473C503C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+42C]+3C0074</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14456</ID>
+              <Description>"物攻"</Description>
+              <LastState Value="0" RealAddress="473C5040"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+42C]+3C0078</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14457</ID>
+              <Description>"物防"</Description>
+              <LastState Value="0" RealAddress="473C5044"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+42C]+3C007C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14458</ID>
+              <Description>"魔攻"</Description>
+              <LastState Value="0" RealAddress="473C5048"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+42C]+3C0080</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14459</ID>
+              <Description>"魔防"</Description>
+              <LastState Value="0" RealAddress="473C504C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+42C]+3C0084</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14460</ID>
+              <Description>"命中"</Description>
+              <LastState Value="0" RealAddress="473C5050"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+42C]+3C0088</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14461</ID>
+              <Description>"回避"</Description>
+              <LastState Value="0" RealAddress="473C5054"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+42C]+3C008C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14453</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14166</ID>
+          <Description>"装备基础数值修改（读档后数据重置）"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>0000FF</Color>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>14202</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14167</ID>
+              <Description>"选择要修改的装备"</Description>
+              <DropDownListLink>道具列表·装备</DropDownListLink>
+              <LastState Value="0" RealAddress="00AE0430"/>
+              <Color>FF0000</Color>
+              <VariableType>4 Bytes</VariableType>
+              <Address>AGE_cn.EXE+430</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14204</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14468</ID>
+              <Description>"装备属性"</Description>
+              <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">0:--
+1:无属
+2:物理
+3:地脈
+4:冷却
+5:火炎
+6:电击
+7:神圣
+8:暗黑
+</DropDownList>
+              <LastState Value="0" RealAddress="491B9CBC"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+4*[AGE_cn.EXE+430]+21B4CF4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14195</ID>
+              <Description>"HP"</Description>
+              <LastState Value="0" RealAddress="491E0DBC"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+430]+21DBDF4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14196</ID>
+              <Description>"物攻"</Description>
+              <LastState Value="0" RealAddress="491E0DC0"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+430]+21DBDF8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14197</ID>
+              <Description>"物防"</Description>
+              <LastState Value="0" RealAddress="491E0DC4"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+430]+21DBDFC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14198</ID>
+              <Description>"魔攻"</Description>
+              <LastState Value="0" RealAddress="491E0DC8"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+430]+21DBE00</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14199</ID>
+              <Description>"魔防"</Description>
+              <LastState Value="0" RealAddress="491E0DCC"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+430]+21DBE04</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14200</ID>
+              <Description>"命中"</Description>
+              <LastState Value="0" RealAddress="491E0DD0"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+430]+21DBE08</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14201</ID>
+              <Description>"回避"</Description>
+              <LastState Value="0" RealAddress="491E0DD4"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+1C*[AGE_cn.EXE+430]+21DBE0C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14193</ID>
+              <Description>"待机"</Description>
+              <LastState Value="0" RealAddress="491DCF3C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+4*[AGE_cn.EXE+430]+21D7F74</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14517</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14516</ID>
+              <Description>"技能A"</Description>
+              <DropDownListLink>技能列表</DropDownListLink>
+              <LastState Value="0" RealAddress="491C583C"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+C*[AGE_cn.EXE+430]+21C0874</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14519</ID>
+              <Description>"技能B"</Description>
+              <DropDownListLink>技能列表</DropDownListLink>
+              <LastState Value="0" RealAddress="491C5840"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+C*[AGE_cn.EXE+430]+21C0878</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14518</ID>
+              <Description>"技能C"</Description>
+              <DropDownListLink>技能列表</DropDownListLink>
+              <LastState Value="0" RealAddress="491C5844"/>
+              <VariableType>Custom</VariableType>
+              <CustomType>AGE</CustomType>
+              <Address>(起始)+C*[AGE_cn.EXE+430]+21C087C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14203</ID>
+              <Description>"------------------------分割线----------------------"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14373</ID>
+      <Description>"人物属性"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>14375</ID>
+          <Description>"------------------------分割线----------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14376</ID>
+          <Description>"选择要修改的人物"</Description>
+          <DropDownListLink>人物列表</DropDownListLink>
+          <LastState Value="0" RealAddress="00AE0424"/>
+          <Color>FF0000</Color>
+          <VariableType>4 Bytes</VariableType>
+          <Address>AGE_cn.EXE+424</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14386</ID>
+          <Description>"------------------------分割线----------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14392</ID>
+          <Description>"面板（会还原仅供查看）"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14390</ID>
+          <Description>"------------------------分割线----------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14400</ID>
+          <Description>"等级"</Description>
+          <LastState Value="0" RealAddress="4747CB4C"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+4*[AGE_cn.EXE+424]+477B84</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14401</ID>
+          <Description>"经验值"</Description>
+          <LastState Value="0" RealAddress="4747CCDC"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+4*[AGE_cn.EXE+424]+477D14</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14393</ID>
+          <Description>"HP"</Description>
+          <LastState Value="0" RealAddress="472F9DE0"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+2F4E18+1C*[AGE_cn.EXE+424]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14394</ID>
+          <Description>"物攻"</Description>
+          <LastState Value="0" RealAddress="472F9DE4"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+2F4E1C+1C*[AGE_cn.EXE+424]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14395</ID>
+          <Description>"物防"</Description>
+          <LastState Value="0" RealAddress="472F9DE8"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+2F4E20+1C*[AGE_cn.EXE+424]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14396</ID>
+          <Description>"魔攻"</Description>
+          <LastState Value="0" RealAddress="472F9DEC"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+2F4E24+1C*[AGE_cn.EXE+424]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14397</ID>
+          <Description>"魔防"</Description>
+          <LastState Value="0" RealAddress="472F9DF0"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+2F4E28+1C*[AGE_cn.EXE+424]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14398</ID>
+          <Description>"命中"</Description>
+          <LastState Value="0" RealAddress="472F9DF4"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+2F4E2C+1C*[AGE_cn.EXE+424]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14399</ID>
+          <Description>"回避"</Description>
+          <LastState Value="0" RealAddress="472F9DF8"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+2F4E30+1C*[AGE_cn.EXE+424]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14402</ID>
+          <Description>"待机"</Description>
+          <LastState Value="0" RealAddress="472F9C50"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+4*[AGE_cn.EXE+424]+2F4C88</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14389</ID>
+          <Description>"------------------------分割线----------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14404</ID>
+          <Description>"加算值（修改后属性变动后生效属性可存档最大值500）"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14406</ID>
+          <Description>"------------------------分割线----------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14405</ID>
+          <Description>"HP加算"</Description>
+          <LastState Value="0" RealAddress="4747E12C"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+1C*[AGE_cn.EXE+424]+479164</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14407</ID>
+          <Description>"物攻加算"</Description>
+          <LastState Value="0" RealAddress="4747E130"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+1C*[AGE_cn.EXE+424]+479168</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14408</ID>
+          <Description>"物防加算"</Description>
+          <LastState Value="0" RealAddress="4747E134"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+1C*[AGE_cn.EXE+424]+47916C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14409</ID>
+          <Description>"魔攻加算"</Description>
+          <LastState Value="0" RealAddress="4747E138"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+1C*[AGE_cn.EXE+424]+479170</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14410</ID>
+          <Description>"魔防加算"</Description>
+          <LastState Value="0" RealAddress="4747E13C"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+1C*[AGE_cn.EXE+424]+479174</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14411</ID>
+          <Description>"命中加算"</Description>
+          <LastState Value="0" RealAddress="4747E140"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+1C*[AGE_cn.EXE+424]+479178</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14412</ID>
+          <Description>"回避加算"</Description>
+          <LastState Value="0" RealAddress="4747E144"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+1C*[AGE_cn.EXE+424]+47917C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14413</ID>
+          <Description>"所持加算（所持最大60）"</Description>
+          <LastState Value="0" RealAddress="4747DF9C"/>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+4*[AGE_cn.EXE+424]+478FD4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14403</ID>
+          <Description>"------------------------分割线----------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14510</ID>
+          <Description>"技能"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14374</ID>
+          <Description>"------------------------分割线----------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14385</ID>
+          <Description>"选择要修改的技能"</Description>
+          <DropDownListLink>技能列表</DropDownListLink>
+          <LastState Value="0" RealAddress="00AE0428"/>
+          <Color>FF0000</Color>
+          <VariableType>4 Bytes</VariableType>
+          <Address>AGE_cn.EXE+428</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14206</ID>
+          <Description>"技能加算等级"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:0
+1:1
+2:2
+3:3
+4:4
+5:5
+6:6
+7:7
+8:8
+9:9
+</DropDownList>
+          <LastState Value="0" RealAddress="4747EC1C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>(起始)+4*[AGE_cn.EXE+428]+FA0*[AGE_cn.EXE+424]+479C54</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14414</ID>
+          <Description>"------------------------分割线----------------------"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1017</ID>
+      <Description>"魔王石入手修改（0=未入手 1=已入手 点击此项数值可全入手）"</Description>
+      <Options moHideChildren="1" moRecursiveSetValue="1" moManualExpandCollapse="1"/>
+      <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:全入手
+</DropDownList>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1018</ID>
+          <Description>"001"</Description>
+          <LastState Value="1" RealAddress="4739C000"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397038</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1096</ID>
+          <Description>"002"</Description>
+          <LastState Value="1" RealAddress="4739C134"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39716C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1019</ID>
+          <Description>"003"</Description>
+          <LastState Value="1" RealAddress="4739C004"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39703C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1022</ID>
+          <Description>"004"</Description>
+          <LastState Value="1" RealAddress="4739C010"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397048</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1023</ID>
+          <Description>"005"</Description>
+          <LastState Value="1" RealAddress="4739C014"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39704C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1020</ID>
+          <Description>"006"</Description>
+          <LastState Value="1" RealAddress="4739C008"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397040</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1044</ID>
+          <Description>"007"</Description>
+          <LastState Value="1" RealAddress="4739C068"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970A0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1045</ID>
+          <Description>"008"</Description>
+          <LastState Value="1" RealAddress="4739C06C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970A4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1060</ID>
+          <Description>"009"</Description>
+          <LastState Value="1" RealAddress="4739C0A8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970E0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1062</ID>
+          <Description>"010"</Description>
+          <LastState Value="1" RealAddress="4739C0B0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970E8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1046</ID>
+          <Description>"011"</Description>
+          <LastState Value="1" RealAddress="4739C070"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970A8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1038</ID>
+          <Description>"012"</Description>
+          <LastState Value="1" RealAddress="4739C050"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397088</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1047</ID>
+          <Description>"013"</Description>
+          <LastState Value="1" RealAddress="4739C074"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970AC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1048</ID>
+          <Description>"014"</Description>
+          <LastState Value="1" RealAddress="4739C078"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970B0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1043</ID>
+          <Description>"015"</Description>
+          <LastState Value="1" RealAddress="4739C064"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39709C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1075</ID>
+          <Description>"016"</Description>
+          <LastState Value="1" RealAddress="4739C0E4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39711C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1024</ID>
+          <Description>"017"</Description>
+          <LastState Value="1" RealAddress="4739C018"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397050</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1039</ID>
+          <Description>"018"</Description>
+          <LastState Value="1" RealAddress="4739C054"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39708C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1054</ID>
+          <Description>"019"</Description>
+          <LastState Value="1" RealAddress="4739C090"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970C8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1029</ID>
+          <Description>"020"</Description>
+          <LastState Value="1" RealAddress="4739C02C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397064</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1030</ID>
+          <Description>"021"</Description>
+          <LastState Value="1" RealAddress="4739C030"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397068</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1031</ID>
+          <Description>"022"</Description>
+          <LastState Value="1" RealAddress="4739C034"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39706C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1041</ID>
+          <Description>"023"</Description>
+          <LastState Value="1" RealAddress="4739C05C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397094</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1042</ID>
+          <Description>"024"</Description>
+          <LastState Value="1" RealAddress="4739C060"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397098</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1032</ID>
+          <Description>"025"</Description>
+          <LastState Value="1" RealAddress="4739C038"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397070</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1033</ID>
+          <Description>"026"</Description>
+          <LastState Value="1" RealAddress="4739C03C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397074</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1034</ID>
+          <Description>"027"</Description>
+          <LastState Value="1" RealAddress="4739C040"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397078</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1035</ID>
+          <Description>"028"</Description>
+          <LastState Value="1" RealAddress="4739C044"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39707C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1036</ID>
+          <Description>"029"</Description>
+          <LastState Value="1" RealAddress="4739C048"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397080</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1037</ID>
+          <Description>"030"</Description>
+          <LastState Value="1" RealAddress="4739C04C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397084</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1063</ID>
+          <Description>"031"</Description>
+          <LastState Value="1" RealAddress="4739C0B4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970EC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1064</ID>
+          <Description>"032"</Description>
+          <LastState Value="1" RealAddress="4739C0B8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970F0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1065</ID>
+          <Description>"033"</Description>
+          <LastState Value="1" RealAddress="4739C0BC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970F4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1069</ID>
+          <Description>"034"</Description>
+          <LastState Value="1" RealAddress="4739C0CC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397104</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1051</ID>
+          <Description>"035"</Description>
+          <LastState Value="1" RealAddress="4739C084"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970BC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1025</ID>
+          <Description>"036"</Description>
+          <LastState Value="1" RealAddress="4739C01C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397054</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1026</ID>
+          <Description>"037"</Description>
+          <LastState Value="1" RealAddress="4739C020"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397058</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1040</ID>
+          <Description>"038"</Description>
+          <LastState Value="1" RealAddress="4739C058"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397090</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1027</ID>
+          <Description>"039"</Description>
+          <LastState Value="1" RealAddress="4739C024"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39705C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1028</ID>
+          <Description>"040"</Description>
+          <LastState Value="1" RealAddress="4739C028"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397060</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1052</ID>
+          <Description>"041"</Description>
+          <LastState Value="1" RealAddress="4739C088"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970C0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1053</ID>
+          <Description>"042"</Description>
+          <LastState Value="1" RealAddress="4739C08C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970C4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1050</ID>
+          <Description>"043"</Description>
+          <LastState Value="1" RealAddress="4739C080"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970B8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1089</ID>
+          <Description>"044"</Description>
+          <LastState Value="1" RealAddress="4739C118"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397150</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1055</ID>
+          <Description>"045"</Description>
+          <LastState Value="1" RealAddress="4739C094"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970CC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1049</ID>
+          <Description>"046"</Description>
+          <LastState Value="1" RealAddress="4739C07C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970B4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1057</ID>
+          <Description>"047"</Description>
+          <LastState Value="1" RealAddress="4739C09C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970D4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1056</ID>
+          <Description>"048"</Description>
+          <LastState Value="1" RealAddress="4739C098"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970D0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1059</ID>
+          <Description>"049"</Description>
+          <LastState Value="1" RealAddress="4739C0A4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970DC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1058</ID>
+          <Description>"050"</Description>
+          <LastState Value="1" RealAddress="4739C0A0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970D8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1061</ID>
+          <Description>"051"</Description>
+          <LastState Value="1" RealAddress="4739C0AC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970E4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1108</ID>
+          <Description>"052"</Description>
+          <LastState Value="1" RealAddress="4739C164"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39719C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1109</ID>
+          <Description>"053"</Description>
+          <LastState Value="1" RealAddress="4739C168"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971A0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1110</ID>
+          <Description>"054"</Description>
+          <LastState Value="1" RealAddress="4739C16C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971A4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1066</ID>
+          <Description>"055"</Description>
+          <LastState Value="1" RealAddress="4739C0C0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970F8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1067</ID>
+          <Description>"056"</Description>
+          <LastState Value="1" RealAddress="4739C0C4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3970FC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1090</ID>
+          <Description>"057"</Description>
+          <LastState Value="1" RealAddress="4739C11C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397154</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1091</ID>
+          <Description>"058"</Description>
+          <LastState Value="1" RealAddress="4739C120"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397158</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1068</ID>
+          <Description>"059"</Description>
+          <LastState Value="1" RealAddress="4739C0C8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397100</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1095</ID>
+          <Description>"060"</Description>
+          <LastState Value="1" RealAddress="4739C130"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397168</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1070</ID>
+          <Description>"061"</Description>
+          <LastState Value="1" RealAddress="4739C0D0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397108</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1111</ID>
+          <Description>"062"</Description>
+          <LastState Value="1" RealAddress="4739C170"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971A8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1112</ID>
+          <Description>"063"</Description>
+          <LastState Value="1" RealAddress="4739C174"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971AC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1076</ID>
+          <Description>"064"</Description>
+          <LastState Value="1" RealAddress="4739C0E8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397120</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1077</ID>
+          <Description>"065"</Description>
+          <LastState Value="1" RealAddress="4739C0EC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397124</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1078</ID>
+          <Description>"066"</Description>
+          <LastState Value="1" RealAddress="4739C0F0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397128</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1102</ID>
+          <Description>"067"</Description>
+          <LastState Value="1" RealAddress="4739C14C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397184</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1103</ID>
+          <Description>"068"</Description>
+          <LastState Value="1" RealAddress="4739C150"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397188</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1104</ID>
+          <Description>"069"</Description>
+          <LastState Value="1" RealAddress="4739C154"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39718C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1106</ID>
+          <Description>"070"</Description>
+          <LastState Value="1" RealAddress="4739C15C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397194</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1107</ID>
+          <Description>"071"</Description>
+          <LastState Value="1" RealAddress="4739C160"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397198</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1092</ID>
+          <Description>"072"</Description>
+          <LastState Value="1" RealAddress="4739C124"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39715C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1093</ID>
+          <Description>"073"</Description>
+          <LastState Value="1" RealAddress="4739C128"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397160</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1113</ID>
+          <Description>"074"</Description>
+          <LastState Value="1" RealAddress="4739C178"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971B0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1114</ID>
+          <Description>"075"</Description>
+          <LastState Value="1" RealAddress="4739C17C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971B4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1115</ID>
+          <Description>"076"</Description>
+          <LastState Value="1" RealAddress="4739C180"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971B8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1116</ID>
+          <Description>"077"</Description>
+          <LastState Value="1" RealAddress="4739C184"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971BC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1117</ID>
+          <Description>"078"</Description>
+          <LastState Value="1" RealAddress="4739C188"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971C0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1118</ID>
+          <Description>"079"</Description>
+          <LastState Value="1" RealAddress="4739C18C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971C4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1099</ID>
+          <Description>"080"</Description>
+          <LastState Value="1" RealAddress="4739C140"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397178</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1101</ID>
+          <Description>"081"</Description>
+          <LastState Value="1" RealAddress="4739C148"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397180</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1021</ID>
+          <Description>"082"</Description>
+          <LastState Value="1" RealAddress="4739C00C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397044</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1100</ID>
+          <Description>"083"</Description>
+          <LastState Value="1" RealAddress="4739C144"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39717C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1094</ID>
+          <Description>"084"</Description>
+          <LastState Value="1" RealAddress="4739C12C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397164</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1098</ID>
+          <Description>"085"</Description>
+          <LastState Value="1" RealAddress="4739C13C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397174</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1097</ID>
+          <Description>"086"</Description>
+          <LastState Value="1" RealAddress="4739C138"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397170</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1105</ID>
+          <Description>"087"</Description>
+          <LastState Value="1" RealAddress="4739C158"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397190</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1079</ID>
+          <Description>"088"</Description>
+          <LastState Value="1" RealAddress="4739C0F4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39712C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1080</ID>
+          <Description>"089"</Description>
+          <LastState Value="1" RealAddress="4739C0F8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397130</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1081</ID>
+          <Description>"090"</Description>
+          <LastState Value="1" RealAddress="4739C0FC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397134</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1082</ID>
+          <Description>"091"</Description>
+          <LastState Value="1" RealAddress="4739C100"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397138</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1084</ID>
+          <Description>"092"</Description>
+          <LastState Value="1" RealAddress="4739C104"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39713C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1085</ID>
+          <Description>"093"</Description>
+          <LastState Value="1" RealAddress="4739C108"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397140</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1086</ID>
+          <Description>"094"</Description>
+          <LastState Value="1" RealAddress="4739C10C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397144</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1087</ID>
+          <Description>"095"</Description>
+          <LastState Value="1" RealAddress="4739C110"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397148</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1088</ID>
+          <Description>"096"</Description>
+          <LastState Value="1" RealAddress="4739C114"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39714C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1071</ID>
+          <Description>"097"</Description>
+          <LastState Value="1" RealAddress="4739C0D4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39710C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1072</ID>
+          <Description>"098"</Description>
+          <LastState Value="1" RealAddress="4739C0D8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397110</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1073</ID>
+          <Description>"099"</Description>
+          <LastState Value="1" RealAddress="4739C0DC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397114</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1074</ID>
+          <Description>"100"</Description>
+          <LastState Value="1" RealAddress="4739C0E0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397118</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1083</ID>
+          <Description>"101"</Description>
+          <LastState Value="1" RealAddress="4739C1A0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971D8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1119</ID>
+          <Description>"102"</Description>
+          <LastState Value="1" RealAddress="4739C190"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971C8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1120</ID>
+          <Description>"103"</Description>
+          <LastState Value="1" RealAddress="4739C194"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971CC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1121</ID>
+          <Description>"104"</Description>
+          <LastState Value="1" RealAddress="4739C198"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971D0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1122</ID>
+          <Description>"105"</Description>
+          <LastState Value="1" RealAddress="4739C19C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971D4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3480</ID>
+          <Description>"106"</Description>
+          <LastState Value="1" RealAddress="4739C1A4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971DC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3481</ID>
+          <Description>"107"</Description>
+          <LastState Value="1" RealAddress="4739C1A8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971E0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3482</ID>
+          <Description>"108"</Description>
+          <LastState Value="1" RealAddress="4739C1AC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971E4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3483</ID>
+          <Description>"109"</Description>
+          <LastState Value="1" RealAddress="4739C1B0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971E8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3484</ID>
+          <Description>"110"</Description>
+          <LastState Value="1" RealAddress="4739C1B4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971EC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3485</ID>
+          <Description>"111"</Description>
+          <LastState Value="1" RealAddress="4739C1B8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971F0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3486</ID>
+          <Description>"112"</Description>
+          <LastState Value="1" RealAddress="4739C1BC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971F4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3487</ID>
+          <Description>"113"</Description>
+          <LastState Value="1" RealAddress="4739C1C0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971F8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3488</ID>
+          <Description>"114"</Description>
+          <LastState Value="1" RealAddress="4739C1C4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>3971FC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3489</ID>
+          <Description>"115"</Description>
+          <LastState Value="1" RealAddress="4739C1C8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397200</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3490</ID>
+          <Description>"116"</Description>
+          <LastState Value="1" RealAddress="4739C1CC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397204</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3491</ID>
+          <Description>"117"</Description>
+          <LastState Value="1" RealAddress="4739C1D0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397208</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3492</ID>
+          <Description>"118"</Description>
+          <LastState Value="1" RealAddress="4739C1D4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39720C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3493</ID>
+          <Description>"119"</Description>
+          <LastState Value="1" RealAddress="4739C1D8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397210</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3494</ID>
+          <Description>"120"</Description>
+          <LastState Value="1" RealAddress="4739C1DC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397214</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3495</ID>
+          <Description>"121"</Description>
+          <LastState Value="1" RealAddress="4739C1E0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397218</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3496</ID>
+          <Description>"122"</Description>
+          <LastState Value="1" RealAddress="4739C1E4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39721C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3497</ID>
+          <Description>"123"</Description>
+          <LastState Value="1" RealAddress="4739C1E8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397220</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3498</ID>
+          <Description>"124"</Description>
+          <LastState Value="1" RealAddress="4739C1EC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397224</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3499</ID>
+          <Description>"125"</Description>
+          <LastState Value="1" RealAddress="4739C1F0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397228</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3500</ID>
+          <Description>"126"</Description>
+          <LastState Value="1" RealAddress="4739C1F4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39722C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3501</ID>
+          <Description>"127"</Description>
+          <LastState Value="1" RealAddress="4739C1F8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397230</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3502</ID>
+          <Description>"128"</Description>
+          <LastState Value="1" RealAddress="4739C1FC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397234</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3503</ID>
+          <Description>"129"</Description>
+          <LastState Value="1" RealAddress="4739C200"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397238</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3504</ID>
+          <Description>"130"</Description>
+          <LastState Value="1" RealAddress="4739C204"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>39723C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3505</ID>
+          <Description>"131"</Description>
+          <LastState Value="1" RealAddress="4739C208"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397240</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8202</ID>
+          <Description>"132"</Description>
+          <LastState Value="0" RealAddress="4739C20C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397244</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8203</ID>
+          <Description>"133"</Description>
+          <LastState Value="0" RealAddress="4739C210"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>397248</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8190</ID>
+      <Description>"大地图"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:未开放
+1:已开放
+</DropDownList>
+      <LastState Value="0" RealAddress="47011C74"/>
+      <Color>000000</Color>
+      <VariableType>Custom</VariableType>
+      <CustomType>AGE</CustomType>
+      <Address>AGE_cn.EXE+2D663C</Address>
+      <Offsets>
+        <Offset>CCAC</Offset>
+        <Offset>6A344</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>8186</ID>
+          <Description>"废柴迷宫"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:未开放
+1:已开放
+</DropDownList>
+          <LastState Value="0" RealAddress="4700CDB4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>7DEC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8187</ID>
+          <Description>"至望之塔"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:未开放
+1:已开放
+</DropDownList>
+          <LastState Value="0" RealAddress="4700CDB8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>7DF0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8195</ID>
+          <Description>"光滅的崖（86号魔王石）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:未开放
+1:已开放
+</DropDownList>
+          <LastState Value="0" RealAddress="4700C008"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>7040</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8175</ID>
+      <Description>"衣装（透视技能开启时无效）"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>8174</ID>
+          <Description>"リリカ（莉莉卡）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DB4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CDEC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8177</ID>
+          <Description>"ダルフィア（达鲁菲亚）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DB8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CDF0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8178</ID>
+          <Description>"ユナギ（由娜奇）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DBC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CDF4</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8179</ID>
+          <Description>"エクセル（艾库塞露）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DC0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CDF8</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8180</ID>
+          <Description>"ユリーシャ（尤琳莎）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DC4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CDFC</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8181</ID>
+          <Description>"ミクリ（米库莉）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DC8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CE00</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8182</ID>
+          <Description>"アグナ（亚古纳）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DCC"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CE04</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8183</ID>
+          <Description>"ロザリンド（罗查莉多）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DD0"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CE08</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8184</ID>
+          <Description>"魔神フルーレテイ（芙露蕾蒂）"</Description>
+          <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:通常
+1:新衣
+</DropDownList>
+          <LastState Value="0" RealAddress="47011DD4"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>CE0C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1134</ID>
+      <Description>"地图移动(慎用！)"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <Color>0000FF</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1126</ID>
+          <Description>"玩家Y坐标"</Description>
+          <LastState Value="2024" RealAddress="47039520"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>34558</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1131</ID>
+          <Description>"玩家X坐标"</Description>
+          <LastState Value="1872" RealAddress="47039518"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>34550</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1124</ID>
+          <Description>"玩家地图代码"</Description>
+          <LastState Value="11" RealAddress="4703950C"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>34544</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1133</ID>
+          <Description>"小地图显示代码"</Description>
+          <LastState Value="1" RealAddress="472AB554"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>2A658C</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14508</ID>
+      <Description>"各种列表（勿修改勿删除）"</Description>
+      <Options moAlwaysHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>14509</ID>
+          <Description>"起始"</Description>
+          <LastState Value="3" RealAddress="47004FC8"/>
+          <Color>000000</Color>
+          <VariableType>Custom</VariableType>
+          <CustomType>AGE</CustomType>
+          <Address>AGE_cn.EXE+2D663C</Address>
+          <Offsets>
+            <Offset>0</Offset>
+            <Offset>6A344</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14511</ID>
+          <Description>"道具列表·全"</Description>
+          <DropDownList DisplayValueAsItem="1">0:无物品
+101:治愈之封瓶
+102:伊利恩之封瓶
+103:女神的封瓶
+104:升力香炉
+105:升壁香炉
+106:升魔香炉
+107:升域香炉
+108:静域天幕
+109:斗技之翼
+151:治癒之水
+152:伊利恩之息吹
+153:女神之滴
+154:升力之妙薬
+155:升壁之妙薬
+156:升魔之妙薬
+157:升域之妙薬
+158:斗技之羽
+159:天幕
+201:地脉符咒
+202:歪曲符咒
+203:重地壳符咒
+206:水流符咒
+207:湖符咒
+208:海啸符咒
+211:冷气符咒
+212:冰块符咒
+213:冰之少女符咒
+216:火焰之符咒
+217:轰焰之符咒
+218:红莲之符咒
+221:落雷之符咒
+222:放电之符咒
+223:轰雷之符咒
+226:风之符咒
+227:旋风之符咒
+228:龙卷风之符咒
+231:神圣之符咒
+232:大天使之符咒
+233:圣灵之符咒
+236:暗黒之符咒
+237:死神之符咒
+238:塔纳托斯之符咒
+239:罗查莉多之破裂玉
+301:飞跃白星石
+302:巨人秘石
+303:獅子秘石
+304:磐石秘石
+305:导师秘石
+306:圣者秘石
+307:商人秘石
+401:伊利恩之涙
+402:伊利恩之聖印
+403:升力之魔焰
+404:升壁之魔焰
+405:升魔之魔焰
+406:升域之魔焰
+407:静域天幕修补材料
+408:斗技片
+409:命中強化材
+410:回避強化材
+411:物攻強化材
+412:物防強化材
+413:魔攻強化材
+414:魔防強化材
+415:耐久強化材
+416:命中強化結晶
+417:回避強化結晶
+418:物攻強化結晶
+419:物防強化結晶
+420:魔攻強化結晶
+421:魔防強化結晶
+422:耐久強化結晶
+501:銀之錘
+502:金之達
+504:虹色之錘（物防）
+505:屑錘
+506:青い宝石
+507:黄之宝石
+508:緑之宝石
+509:赤之宝石
+510:七色之宝石（物攻）
+511:屑铁
+516:铜币
+517:银币
+518:金币
+519:硬币
+521:銀貨袋
+522:金貨袋
+523:宝石袋
+524:垃圾袋
+526:魔獣之爪
+527:魔獣之角
+528:魔獣之眼球
+529:魔獣之心臓（魔攻）
+530:魔獣之骨
+531:青之液
+532:赤之液
+533:甘い蜜
+534:淫魔之蜜（魔防）
+535:空き瓶
+536:幻獣之爪
+537:幻獣之角
+538:幻獣之眼球
+539:幻獣之心臓（命中）
+540:幻獣之骨
+541:白草
+542:香葉
+543:月見草
+544:神秘之草（hp）
+545:緑草
+546:神獣之爪
+547:神獣之角
+548:神獣之眼球
+549:神獣之心臓（回避）
+550:神獣之骨
+601:小老鼠
+1051:神圣之杖
+1052:雷鳥的羽杖
+1053:金属短杖
+1054:狂舞之杖
+1055:猛兽的骨杖
+1056:热情短杖
+1057:秘银短杖
+1058:圣女的秘杖
+1059:特琉妮之泪
+1060:南瓜法杖
+1061:結界之杖
+1062:聖王妃之神杖
+1063:神兵之翼杖
+1064:電磁竜之牙杖
+1065:赫克萨歪杖
+1066:梅特塞卡玛特之淫杖
+1067:加尔福短杖
+1068:媒介之歪杖
+1069:魔术公会之秘杖
+1071:佩尔索亚神杖
+1072:力天使之神杖
+1081:双翼之神杖
+1082:究极之杖
+1083:魔術師之球杖
+1084:珊海王之魔杖
+1085:古莉修库之神杖
+1091:歪魔之杖
+1092:欲望的圣杖
+1093:歪姬秘杖
+1099:毫无价值的杖
+1101:鉄鎚
+1102:戦鎚巴隆
+1103:戦士之鉄鎚
+1104:秘银之槌
+1105:旋鎚宾德
+1106:嗡嗡号
+1107:爆鎚布洛辛
+1108:歪鎚别西格
+1109:地竜之牙鎚
+1110:黄金槌
+1111:真紅之大鉄鎚
+1112:王鎚古拉塞斯塔
+1113:神鎚卡鲁波涅尔
+1122:罗查莉多之魔導鎚
+1123:爆鎚布罗弗
+1124:英鎚涅卜鲁
+1149:毫无价值的鉄鎚
+1151:鉄剣
+1152:闇隸属之剣
+1153:雷剣杜汉
+1154:藍鷹騎士之剣
+1155:冷気之剣
+1156:聖剣里赫特
+1157:泽盖修
+1158:封剣梅斯特
+1159:暗雾剑
+1160:指引光明之剣
+1161:奥斯汀
+1162:星剣法尔肯
+1163:聖剣耶里斯迪亚
+1164:圣子末日
+1165:地剣凯萨斯
+1166:魔剣哈梅伦
+1167:祝福之剣
+1168:暴喰剣巴尔
+1169:废材剑
+1170:和刀一文字
+1171:瞬剣艾塞德
+1172:魔剑海谢拉
+1173:天平十字剑
+1174:符文·海谢拉
+1175:琉米尔西洋剑
+1176:帝王之剑
+1177:王族魔法剑
+1199:毫无价值的剣
+1201:斯莱维
+1202:焰型大剑
+1203:剛剣古兰茨
+1204:黑剑
+1205:墨丁巨剑
+1206:巧剣谢拜特
+1207:宝剣理维莱茵
+1208:维恩扎迦
+1209:封剣内维尔
+1210:莱万汀
+1211:祸武剑
+1212:王剣古拉塞斯塔
+1213:神剣ズ兹赫露特
+1214:铸织之斗剣
+1215:铸织之地斗剣
+1216:铸织之冷斗剣
+1217:铸织之炎斗剣
+1218:铸织之雷斗剣
+1219:铸织之光斗剣
+1220:铸织之闇斗剣
+1221:生锈大剣
+1222:乖剣依图乌斯
+1223:黑剑改
+1224:鬼剣基古扎尔
+1225:英剣海利蔟姆
+1226:聖剣塞雷蒂亚
+1227:聖炎剣法拉米亚
+1228:马兹忒利亚神剣
+1249:毫无价值的大剣
+1251:佩風傘
+1252:铁臂傘
+1253:名傘·刺雨
+1254:鉄軸傘
+1255:剛傘·大地
+1256:闇夜傘
+1257:頂傘·雷光
+1258:鉄球傘
+1259:炎龍傘
+1260:風神傘
+1261:雷神傘
+1262:王傘·女帝
+1263:神傘·飛燕
+1264:漸傘·命切
+1265:英傘·神威
+1299:毫无价值的傘
+1301:贾维斯
+1302:盗賊之宝輪
+1303:影縫镖
+1304:秘银镖
+1305:哭璃之円盤
+1306:双刃宝輪
+1307:技巧者之宝輪
+1308:加布格罗
+1309:破術之镖
+1310:火花舞う円盤
+1311:闇界之镖
+1312:盗賊王之宝輪
+1313:闇光たる宝輪
+1314:菜德之宝輪
+1315:修德拉尔之宝輪
+1316:暗剑
+1317:忍刀那库亚
+1318:真实短剑
+1349:毫无价值的円盤
+1351:木弓
+1352:連射弓
+1353:深紅之合成弓
+1354:维勒弓
+1355:暗影猎手的魔弓
+1356:森精旅弓
+1357:大地之弓
+1358:千里眼巧弓
+1359:费内之弓
+1360:魔弓泽欧
+1361:瑞贝帕露菲
+1362:古拉塞斯塔之王弓
+1363:狙撃王女之神弓
+1364:先史文明之琴弓
+1365:阿雷金之英弓
+1366:伦西亚帕鲁弓
+1367:神嚮之聖弓
+1368:天結之神弓
+1399:毫无价值的弓
+1401:法斯特
+1402:音律钢丝锯
+1403:鉄鋼手·凡
+1404:魔焰钢丝锯
+1405:暗鋼手·夜
+1406:巧鋼手里格尔
+1407:夸尔钢丝锯
+1408:布里茨钢丝锯
+1409:凯兹钢丝锯
+1410:库洛姆钢丝锯
+1411:厄莱钢丝锯
+1412:王鋼手修特罗姆
+1413:神鋼手芙蕾雅
+1414:魔鋼手迪鲁塔
+1415:神鋼手利提特
+1416:鬼鋼手利泽
+1417:歪鋼手泽费盖尔
+1449:毫无价值的鋼糸
+1451:皮鞭
+1452:精霊雷鞭
+1453:調教用鞭
+1454:水流鞭
+1455:血染的双鞭
+1456:毒蛾之鞭
+1457:原罪之破鞭
+1458:王女大人的鞭子
+1459:妖淫之縛鞭
+1460:母豹之鞭
+1461:魔神之鞭
+1462:进击的姫鞭
+1463:暗冷之神鞭
+1464:深淵之歪鞭
+1465:消姿之英鞭
+1499:毫无价值的鞭
+1501:魔導橾殻·I型
+1502:魔導橾殻·II型
+1503:魔導橾殻·魔術型
+1504:魔導橾殻·Ⅲ型
+1505:魔導橾殻·戦士型
+1506:魔導橾殻·Ⅳ型
+1507:魔導橾殻·V型
+1508:魔導橾殻·斗神型
+1509:魔導橾殻·VI型
+1510:魔導橾殻·Ⅶ型
+1511:魔導橾殻·Ⅷ型
+1512:魔導橾殻·王姬型
+1513:魔導橾殻·女神型
+1514:魔導橾殻·戦極型
+1515:魔導橾殻·魔極型
+1549:毫无价值的魔導橾殻
+1551:无印之壶
+1552:女仆之壶
+1553:EU壶
+1554:传说之壶
+1555:无限之壶
+1556:热腾腾的水壶
+1557:黑女仆的水壶
+1599:毫无价值的水壶
+1601:纳鲁格雷普
+1602:八咫烏之魔槍
+1603:戦乙女之槍
+1604:佩尔索亚之剛槍
+1605:斯蒂西亚之神槍
+1606:佩尔索亚之聖搶
+1607:征炎乙女之炎槍
+1649:毫无价值的槍
+1651:聖嵐之鎌
+1652:竜牙之雷鎌
+1653:破滅之鎌
+1654:佩尔索亚之大鎌
+1655:修德鲁姆之雷鎌
+1699:毫无价值的鎌
+1701:1t鉄球
+1702:5t鉄球
+1703:10t鉄球
+1711:魔法金属链接剑
+1712:蓝神链接剑
+1713:琳斯链接剑
+1721:猫手套
+1722:软绵绵手套
+1723:究极手套
+1731:砲剣艾贝利贝
+1732:砲剣西鲁梅尔
+1733:砲剣阿泽弗尔克
+1741:魔导枪艾利夫
+1742:魔导枪利利雷鲁
+1743:古拉欧斯
+1751:稻拉纳的双剑
+1752:利古莱那的双剑
+1753:神魔双剑
+2001:闇者之衣
+2002:斗士之衣
+2003:魔術師之斗衣
+2004:覇者之斗衣
+2005:火精霊之衣
+2006:祝福之衣
+2007:地竜之斗衣
+2008:睡魔之衣
+2009:氷鏡之衣
+2010:風精霊之衣
+2011:斗技王之衣
+2012:EU女仆服
+2013:魔王之斗衣
+2014:青紫色之内裤
+2015:天緣神之衣
+2016:海谢拉铠甲
+2017:符文·海谢拉铠甲
+2018:隸姫之衣
+2019:姫将軍之衣
+2020:戦姫之斗衣
+2021:英傑之斗衣
+2026:女仆服
+2027:歪魔之衣
+2028:魔猪皮
+2099:毫无价值的衣
+2101:板金胸甲
+2102:斗士之鎧
+2103:嵐精霊之斗鎧
+2104:氷結之鎧
+2105:秘银板甲
+2106:大騎士之鎧
+2107:覇者之斗鎧
+2108:竜牙之斗鎧
+2109:轟炎之鎧
+2110:守護天使之鎧
+2111:哭璃之鎧
+2112:罗哥雷斯斗鎧
+2113:魔王之斗鎧
+2114:罗查莉多之大鎧
+2115:鋳織之斗鎧
+2116:鋳織之地斗鎧
+2117:鋳織之冷斗鎧
+2118:鋳織之炎斗鎧
+2119:鋳織之雷斗鎧
+2120:鋳織之光斗鎧
+2121:鋳織之闇斗鎧
+2122:戦鬼之斗鎧
+2123:英傑之斗鎧
+2131:术式斗铠
+2132:剑王斗铠
+2133:封葬斗铠
+2199:毫无价值的鎧
+3001:鉄之盾
+3002:竜鱗之封盾
+3003:勇気之封盾
+3004:覇者之封盾
+3005:反射鏡
+3006:铸织之盾
+3007:英傑之盾
+3099:毫无价值的盾
+3101:歴戦之指輪
+3102:歴戦之指環
+3103:軍神之指輪
+3104:軍神之指環
+3105:英雄之指輪
+3106:英雄之指環
+3111:城堡之指輪
+3112:城堡之指環
+3113:城墙之指輪
+3114:城墙之指環
+3115:大將軍之指輪
+3116:大將軍之指環
+3117:铸织之指輪
+3121:斯诺拉
+3122:英傑之指環
+3131:封葬戒指
+3199:毫无价值的指輪
+3201:属性連鎖之腕輪
+3202:击飞之腕環
+3203:连击之腕環
+3204:拉近之腕環
+3205:贯穿之腕環
+3206:技巧之腕輪
+3207:魅惑之腕輪
+3208:隠密之腕環
+3209:气息感知之腕輪
+3210:看穿之腕輪
+3211:铸织之腕輪
+3212:杰达鲁人偶
+3299:毫无价值的腕輪
+3301:塔之首輪
+3302:塔之首環
+3303:天之首輪
+3304:天之首環
+3305:聖賢者之首輪
+3306:聖賢者之首環
+3311:障壁之首輪
+3312:障壁之首環
+3313:結界之首輪
+3314:結界之首環
+3315:神域之首輪
+3316:神域之首環
+3399:毫无价值的首輪
+3401:致死無効之首飾り
+3402:贯穿無効之首飾り
+3403:缓慢無効之首飾り
+3404:封印無効之首飾り
+3405:探検者之首飾り
+3499:毫无价值的首飾り
+3501:马斯提亚
+3502:圣母之心
+3503:斯蒂妮
+3504:EU女仆王冠
+3505:废材王冠
+3599:毫无价值的髪飾り
+3601:忍者足具
+3602:不動之靴
+3603:再動之靴
+3604:铸织之靴
+3605:涅卜鲁钢靴
+3606:猛牛角靴
+3699:毫无价值的靴
+</DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14512</ID>
+          <Description>"道具列表·装备"</Description>
+          <DropDownList DisplayValueAsItem="1">0:无物品
+1051:神圣之杖
+1052:雷鳥的羽杖
+1053:金属短杖
+1054:狂舞之杖
+1055:猛兽的骨杖
+1056:热情短杖
+1057:秘银短杖
+1058:圣女的秘杖
+1059:特琉妮之泪
+1060:南瓜法杖
+1061:結界之杖
+1062:聖王妃之神杖
+1063:神兵之翼杖
+1064:電磁竜之牙杖
+1065:赫克萨歪杖
+1066:梅特塞卡玛特之淫杖
+1067:加尔福短杖
+1068:媒介之歪杖
+1069:魔术公会之秘杖
+1071:佩尔索亚神杖
+1072:力天使之神杖
+1081:双翼之神杖
+1082:究极之杖
+1083:魔術師之球杖
+1084:珊海王之魔杖
+1085:古莉修库之神杖
+1091:歪魔之杖
+1092:欲望的圣杖
+1093:歪姬秘杖
+1099:毫无价值的杖
+1101:鉄鎚
+1102:戦鎚巴隆
+1103:戦士之鉄鎚
+1104:秘银之槌
+1105:旋鎚宾德
+1106:嗡嗡号
+1107:爆鎚布洛辛
+1108:歪鎚别西格
+1109:地竜之牙鎚
+1110:黄金槌
+1111:真紅之大鉄鎚
+1112:王鎚古拉塞斯塔
+1113:神鎚卡鲁波涅尔
+1122:罗查莉多之魔導鎚
+1123:爆鎚布罗弗
+1124:英鎚涅卜鲁
+1149:毫无价值的鉄鎚
+1151:鉄剣
+1152:闇隸属之剣
+1153:雷剣杜汉
+1154:藍鷹騎士之剣
+1155:冷気之剣
+1156:聖剣里赫特
+1157:泽盖修
+1158:封剣梅斯特
+1159:暗雾剑
+1160:指引光明之剣
+1161:奥斯汀
+1162:星剣法尔肯
+1163:聖剣耶里斯迪亚
+1164:圣子末日
+1165:地剣凯萨斯
+1166:魔剣哈梅伦
+1167:祝福之剣
+1168:暴喰剣巴尔
+1169:废材剑
+1170:和刀一文字
+1171:瞬剣艾塞德
+1172:魔剑海谢拉
+1173:天平十字剑
+1174:符文·海谢拉
+1175:琉米尔西洋剑
+1176:帝王之剑
+1177:王族魔法剑
+1199:毫无价值的剣
+1201:斯莱维
+1202:焰型大剑
+1203:剛剣古兰茨
+1204:黑剑
+1205:墨丁巨剑
+1206:巧剣谢拜特
+1207:宝剣理维莱茵
+1208:维恩扎迦
+1209:封剣内维尔
+1210:莱万汀
+1211:祸武剑
+1212:王剣古拉塞斯塔
+1213:神剣ズ兹赫露特
+1214:铸织之斗剣
+1215:铸织之地斗剣
+1216:铸织之冷斗剣
+1217:铸织之炎斗剣
+1218:铸织之雷斗剣
+1219:铸织之光斗剣
+1220:铸织之闇斗剣
+1221:生锈大剣
+1222:乖剣依图乌斯
+1223:黑剑改
+1224:鬼剣基古扎尔
+1225:英剣海利蔟姆
+1226:聖剣塞雷蒂亚
+1227:聖炎剣法拉米亚
+1228:马兹忒利亚神剣
+1249:毫无价值的大剣
+1251:佩風傘
+1252:铁臂傘
+1253:名傘·刺雨
+1254:鉄軸傘
+1255:剛傘·大地
+1256:闇夜傘
+1257:頂傘·雷光
+1258:鉄球傘
+1259:炎龍傘
+1260:風神傘
+1261:雷神傘
+1262:王傘·女帝
+1263:神傘·飛燕
+1264:漸傘·命切
+1265:英傘·神威
+1299:毫无价值的傘
+1301:贾维斯
+1302:盗賊之宝輪
+1303:影縫镖
+1304:秘银镖
+1305:哭璃之円盤
+1306:双刃宝輪
+1307:技巧者之宝輪
+1308:加布格罗
+1309:破術之镖
+1310:火花舞う円盤
+1311:闇界之镖
+1312:盗賊王之宝輪
+1313:闇光たる宝輪
+1314:菜德之宝輪
+1315:修德拉尔之宝輪
+1316:暗剑
+1317:忍刀那库亚
+1318:真实短剑
+1349:毫无价值的円盤
+1351:木弓
+1352:連射弓
+1353:深紅之合成弓
+1354:维勒弓
+1355:暗影猎手的魔弓
+1356:森精旅弓
+1357:大地之弓
+1358:千里眼巧弓
+1359:费内之弓
+1360:魔弓泽欧
+1361:瑞贝帕露菲
+1362:古拉塞斯塔之王弓
+1363:狙撃王女之神弓
+1364:先史文明之琴弓
+1365:阿雷金之英弓
+1366:伦西亚帕鲁弓
+1367:神嚮之聖弓
+1368:天結之神弓
+1399:毫无价值的弓
+1401:法斯特
+1402:音律钢丝锯
+1403:鉄鋼手·凡
+1404:魔焰钢丝锯
+1405:暗鋼手·夜
+1406:巧鋼手里格尔
+1407:夸尔钢丝锯
+1408:布里茨钢丝锯
+1409:凯兹钢丝锯
+1410:库洛姆钢丝锯
+1411:厄莱钢丝锯
+1412:王鋼手修特罗姆
+1413:神鋼手芙蕾雅
+1414:魔鋼手迪鲁塔
+1415:神鋼手利提特
+1416:鬼鋼手利泽
+1417:歪鋼手泽费盖尔
+1449:毫无价值的鋼糸
+1451:皮鞭
+1452:精霊雷鞭
+1453:調教用鞭
+1454:水流鞭
+1455:血染的双鞭
+1456:毒蛾之鞭
+1457:原罪之破鞭
+1458:王女大人的鞭子
+1459:妖淫之縛鞭
+1460:母豹之鞭
+1461:魔神之鞭
+1462:进击的姫鞭
+1463:暗冷之神鞭
+1464:深淵之歪鞭
+1465:消姿之英鞭
+1499:毫无价值的鞭
+1501:魔導橾殻·I型
+1502:魔導橾殻·II型
+1503:魔導橾殻·魔術型
+1504:魔導橾殻·Ⅲ型
+1505:魔導橾殻·戦士型
+1506:魔導橾殻·Ⅳ型
+1507:魔導橾殻·V型
+1508:魔導橾殻·斗神型
+1509:魔導橾殻·VI型
+1510:魔導橾殻·Ⅶ型
+1511:魔導橾殻·Ⅷ型
+1512:魔導橾殻·王姬型
+1513:魔導橾殻·女神型
+1514:魔導橾殻·戦極型
+1515:魔導橾殻·魔極型
+1549:毫无价值的魔導橾殻
+1551:无印之壶
+1552:女仆之壶
+1553:EU壶
+1554:传说之壶
+1555:无限之壶
+1556:热腾腾的水壶
+1557:黑女仆的水壶
+1599:毫无价值的水壶
+1601:纳鲁格雷普
+1602:八咫烏之魔槍
+1603:戦乙女之槍
+1604:佩尔索亚之剛槍
+1605:斯蒂西亚之神槍
+1606:佩尔索亚之聖搶
+1607:征炎乙女之炎槍
+1649:毫无价值的槍
+1651:聖嵐之鎌
+1652:竜牙之雷鎌
+1653:破滅之鎌
+1654:佩尔索亚之大鎌
+1655:修德鲁姆之雷鎌
+1699:毫无价值的鎌
+1701:1t鉄球
+1702:5t鉄球
+1703:10t鉄球
+1711:魔法金属链接剑
+1712:蓝神链接剑
+1713:琳斯链接剑
+1721:猫手套
+1722:软绵绵手套
+1723:究极手套
+1731:砲剣艾贝利贝
+1732:砲剣西鲁梅尔
+1733:砲剣阿泽弗尔克
+1741:魔导枪艾利夫
+1742:魔导枪利利雷鲁
+1743:古拉欧斯
+1751:稻拉纳的双剑
+1752:利古莱那的双剑
+1753:神魔双剑
+2001:闇者之衣
+2002:斗士之衣
+2003:魔術師之斗衣
+2004:覇者之斗衣
+2005:火精霊之衣
+2006:祝福之衣
+2007:地竜之斗衣
+2008:睡魔之衣
+2009:氷鏡之衣
+2010:風精霊之衣
+2011:斗技王之衣
+2012:EU女仆服
+2013:魔王之斗衣
+2014:青紫色之内裤
+2015:天緣神之衣
+2016:海谢拉铠甲
+2017:符文·海谢拉铠甲
+2018:隸姫之衣
+2019:姫将軍之衣
+2020:戦姫之斗衣
+2021:英傑之斗衣
+2026:女仆服
+2027:歪魔之衣
+2028:魔猪皮
+2099:毫无价值的衣
+2101:板金胸甲
+2102:斗士之鎧
+2103:嵐精霊之斗鎧
+2104:氷結之鎧
+2105:秘银板甲
+2106:大騎士之鎧
+2107:覇者之斗鎧
+2108:竜牙之斗鎧
+2109:轟炎之鎧
+2110:守護天使之鎧
+2111:哭璃之鎧
+2112:罗哥雷斯斗鎧
+2113:魔王之斗鎧
+2114:罗查莉多之大鎧
+2115:鋳織之斗鎧
+2116:鋳織之地斗鎧
+2117:鋳織之冷斗鎧
+2118:鋳織之炎斗鎧
+2119:鋳織之雷斗鎧
+2120:鋳織之光斗鎧
+2121:鋳織之闇斗鎧
+2122:戦鬼之斗鎧
+2123:英傑之斗鎧
+2131:术式斗铠
+2132:剑王斗铠
+2133:封葬斗铠
+2199:毫无价值的鎧
+3001:鉄之盾
+3002:竜鱗之封盾
+3003:勇気之封盾
+3004:覇者之封盾
+3005:反射鏡
+3006:铸织之盾
+3007:英傑之盾
+3099:毫无价值的盾
+3101:歴戦之指輪
+3102:歴戦之指環
+3103:軍神之指輪
+3104:軍神之指環
+3105:英雄之指輪
+3106:英雄之指環
+3111:城堡之指輪
+3112:城堡之指環
+3113:城墙之指輪
+3114:城墙之指環
+3115:大將軍之指輪
+3116:大將軍之指環
+3117:铸织之指輪
+3121:斯诺拉
+3122:英傑之指環
+3131:封葬戒指
+3199:毫无价值的指輪
+3201:属性連鎖之腕輪
+3202:击飞之腕環
+3203:连击之腕環
+3204:拉近之腕環
+3205:贯穿之腕環
+3206:技巧之腕輪
+3207:魅惑之腕輪
+3208:隠密之腕環
+3209:气息感知之腕輪
+3210:看穿之腕輪
+3211:铸织之腕輪
+3212:杰达鲁人偶
+3299:毫无价值的腕輪
+3301:塔之首輪
+3302:塔之首環
+3303:天之首輪
+3304:天之首環
+3305:聖賢者之首輪
+3306:聖賢者之首環
+3311:障壁之首輪
+3312:障壁之首環
+3313:結界之首輪
+3314:結界之首環
+3315:神域之首輪
+3316:神域之首環
+3399:毫无价值的首輪
+3401:致死無効之首飾り
+3402:贯穿無効之首飾り
+3403:缓慢無効之首飾り
+3404:封印無効之首飾り
+3405:探検者之首飾り
+3499:毫无价值的首飾り
+3501:马斯提亚
+3502:圣母之心
+3503:斯蒂妮
+3504:EU女仆王冠
+3505:废材王冠
+3599:毫无价值的髪飾り
+3601:忍者足具
+3602:不動之靴
+3603:再動之靴
+3604:铸织之靴
+3605:涅卜鲁钢靴
+3606:猛牛角靴
+3699:毫无价值的靴
+</DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14513</ID>
+          <Description>"技能列表"</Description>
+          <DropDownList DisplayValueAsItem="1">0:无
+:-------
+:移動分类
+:------
+2:暗视
+3:怪力
+4:古代语
+7:盗贼
+8:遗物学
+9:土使
+10:水使
+11:炎使
+12:雷使
+13:光使
+14:暗使
+15:采取
+:-------
+:条件分类
+:------
+101:杖使
+102:锤使
+103:剑使
+104:大剑使
+105:伞使
+106:投掷使
+107:弓使
+108:钢丝使
+109:鞭使
+110:模型使
+111:药缶使
+112:枪使
+113:镰使
+114:铠装备
+115:鉄球使
+116:連接劍使
+117:手套使
+118:砲劍使
+119:魔导枪使
+120:双剑使
+121:祸武族
+122:䋄缚人
+123:月女神
+124:青太阳
+125:吹鬼族
+126:森狩人
+127:神兵
+128:涅卜鲁族
+129:秘印术
+130:秘印术·地
+131:秘印术·冷
+132:秘印术·火
+133:秘印术·风
+135:歪迷宫
+136:女仆天使
+137:力天使
+138:炎天使
+139:大天使
+140:苍天使
+141:睡魔族
+142:青月光
+143:司令塔
+144:卑怯者
+145:天缘神
+146:飞燕剑
+147:円環魔法
+148:隸姬
+149:姬將軍
+150:使魔
+151:聖騎士
+152:副官
+153:半魔人
+154:柜台小姐
+155:女仆
+156:歪魔
+157:速之拔斗士
+158:刚之拔斗士
+161:伪证秘印术
+162:共鸣
+:-------
+:特殊分类
+:------
+181:反射无效
+182:不动
+183:杀无效
+184:贯通无效
+185:延迟无效
+186:封印无效
+187:不命体
+201:一匹狼
+202:策略
+203:集团战
+204:陷阱设置
+206:博弈
+207:病入膏肓
+208:决死
+209:睡眠不足
+210:同仇敌忾
+211:掌中玩物
+213:性分泌
+214:封缄
+217:巨人兵支援
+218:喜欢杰达鲁
+219:和盖迪的联手
+220:与塔鲁波的联手
+221:反骨
+290:透視
+:-------
+:指揮分类
+:------
+301:战斗指挥
+302:百人长
+303:搅乱
+351:艾丽萨型战斗指挥
+352:神秘的防護
+353:結緣
+354:戰的女神
+355:英雄王
+:-------
+:攻击分类
+:------
+400:男性杀
+401:人类杀
+402:亚人杀
+403:鬼族杀
+405:精灵杀
+407:天使杀
+408:恶魔杀
+409:魔兽杀
+410:幻兽杀
+411:不死杀
+412:灵体杀
+413:创造破坏
+414:神格杀
+415:魔神杀
+416:一般杀
+417:BOSS杀
+418:青月女神的祝福
+419:对空迎击
+420:神殺
+421:属性连锁
+422:吹飞
+423:连击
+424:吸引
+425:贯通
+426:技巧
+427:再行动
+428:影缝
+429:钢丝缚
+430:魅了
+431:瞄准要害
+432:魔力充填
+433:精气吸收
+434:夺取
+435:隐密
+436:封印
+437:祸武血统
+451:天使连锁
+452:女神化
+453:再生
+454:威压
+456:得意忘形
+:-------
+:防御分类
+:------
+501:间接反射
+502:反射
+503:格挡
+504:气息感知
+506:看穿
+507:防御的极致
+508:庇护
+509:近接反射
+510:浮游
+:-------
+:1级技能分类
+:------
+5:飞行
+6:气流
+212:财宝眼
+215:鉴定
+216:忍足
+438:駄天使
+439:爆发
+440:极薄
+553:绘扎无效
+554:基本攻击无效
+555:范围攻击无效
+556:必杀无效
+557:魔法无效
+</DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14514</ID>
+          <Description>"人物列表"</Description>
+          <DropDownList DisplayValueAsItem="1">0:无
+1:杰达鲁
+20:莉莉卡人偶
+59:莉莉卡本体
+3:优特雷
+4:达鲁菲亚
+5:由娜奇
+6:艾库塞露
+7:尤琳莎
+8:米库莉
+21:伊乌塞特
+9:亚古纳
+10:佩罗
+11:罗查莉多
+12:萨鲁
+13:芙露蕾蒂
+14:黑E
+15:艾丽莎（神采第五位天使）
+16:米库修亚娜（天结第六位天使）
+17:梅蒂莎娜（战M第八位天使）
+18:梅罗蒂亚娜（神采第八位天使）
+19:菲亚（天结）
+22:赛丽卡（战女神）
+23:索尼娅（珊海王的円環）
+24:希露菲艾塔（冥色的隶姬）
+25:菲米琳斯（幻燐）
+26:莉莉（姬狩）
+27:希露菲亚（幻燐）
+28:莉塞露（魔导巧壳）
+29:李维（幻燐）
+38:雪莉艾拉（看板娘）
+39:玛欧（女仆）
+42:普罗拉（歪魔）
+43:塔鲁波（莫西干头）
+53:盖迪（光头）
+</DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14515</ID>
+          <Description>"持有者列表"</Description>
+          <DropDownList DisplayValueAsItem="1">0:获得袋
+100:回购商店
+110:保管箱1
+111:保管箱2
+112:保管箱3
+113:保管箱4
+114:保管箱5
+115:保管箱6
+1:杰达鲁
+20:莉莉卡人偶
+59:莉莉卡本体
+3:优特雷
+4:达鲁菲亚
+5:由娜奇
+6:艾库塞露
+7:尤琳莎
+8:米库莉
+21:伊乌塞特
+9:亚古纳
+10:佩罗
+11:罗查莉多
+12:萨鲁
+13:芙露蕾蒂
+14:黑E
+15:艾丽莎（神采第五位天使）
+16:米库修亚娜（天结第六位天使）
+17:梅蒂莎娜（战M第八位天使）
+18:梅罗蒂亚娜（神采第八位天使）
+19:菲亚（天结）
+22:赛丽卡（战女神）
+23:索尼娅（珊海王的円環）
+24:希露菲艾塔（冥色的隶姬）
+25:菲米琳斯（幻燐）
+26:莉莉（姬狩）
+27:希露菲亚（幻燐）
+28:莉塞露（魔导巧壳）
+29:李维（幻燐）
+38:雪莉艾拉（看板娘）
+39:玛欧（女仆）
+42:普罗拉（歪魔）
+43:塔鲁波（莫西干头）
+53:盖迪（光头）
+</DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <LuaScript>local AGE=[[
+alloc(ConvertRoutine,1024)
+alloc(ConvertBackRoutine,1024)
+alloc(TypeName,256)
+alloc(ByteSize,4)
+alloc(UsesFloat,1)
+globalalloc(AGECryptoKey_buffer,4)
+label(AGECryptoKey)
+registersymbol(AGECryptoKey)
+TypeName:
+db 'AGE',0
+
+
+ByteSize:
+dd 4
+UsesFloat:
+db 0
+AGECryptoKey_buffer:
+AGECryptoKey:
+dd 0
+//The convert routine should hold a routine that converts the data to an integer (in eax)
+//function declared as: stdcall int ConvertRoutine(unsigned char *input);
+ConvertRoutine:
+[64-bit]
+//rcx=address of input
+mov eax,[rcx] //eax now contains the bytes 'input' pointed to
+//decrypt
+ror eax,15
+xor eax,dword [AGECryptoKey]
+rol eax,07
+ret
+[/64-bit]
+[32-bit]
+//parameters: (32-bit)
+push ebp
+mov ebp,esp
+//[ebp+8]=input
+mov eax,[ebp+8] //place the address that contains the bytes into eax
+mov eax,[eax] //place the bytes into eax so it's handled as a normal 4 byte value
+//decrypt
+ror eax,15
+xor eax,dword [AGECryptoKey]
+rol eax,07
+pop ebp
+ret 4
+[/32-bit]
+//The convert back routine should hold a routine that converts the given integer back to a row of bytes (e.g when the user wats to write a new value)
+//function declared as: stdcall void ConvertBackRoutine(int i, unsigned char *output);
+ConvertBackRoutine:
+[64-bit]
+//parameters: (64-bit)
+//ecx=input
+//rdx=address of output
+//encrypt
+ror ecx,07
+xor ecx,dword [AGECryptoKey]
+rol ecx,15
+mov [rdx],ecx//place the integer the 4 bytes pointed to by rdx
+ret
+[/64-bit]
+[32-bit]
+//parameters: (32-bit)
+push ebp
+mov ebp,esp
+//[ebp+8]=input
+//[ebp+c]=address of output
+//example:
+push eax
+push ebx
+mov eax,[ebp+8] //load the value into eax
+mov ebx,[ebp+c] //load the address into ebx
+//encrypt
+ror eax,07
+xor eax,dword [AGECryptoKey]
+rol eax,15
+mov [ebx],eax //write the value into the address
+
+pop ebx
+pop eax
+pop ebp
+ret 8
+[/32-bit]
+]]
+registerCustomTypeAutoAssembler(AGE)
+</LuaScript>
+</CheatTable>
