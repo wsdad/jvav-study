@@ -51,6 +51,8 @@ public class PokerDemo {
             System.out.print(pokerPai.get(pai) + " ");
         }
         System.out.print("\n");
+		//测试用注释
+		//本机
     }
 
     //牌组的键值对
