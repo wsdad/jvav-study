@@ -69,5 +69,7 @@ public class PokerDemo {
         pokerPai.put(num++, "大王");
         pokerPai.put(num, "小王");
         return pokerPai;
+        //新冲突测试
+        //在网上
     }
 }
