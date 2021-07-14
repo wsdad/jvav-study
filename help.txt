@@ -1,10 +1,10 @@
 echo "#hello-world" >> README.md 
-git init 
-git add README.md 
-git commit -m "first commit" 
-git branch -M main 
-git remote add origin https://github.com/wsdad/hello-world. git
- git push -u origin main
+git init 初始化
+git add README.md 添加文件到缓存区
+git commit -m "first commit" 提交到本地仓库
+git branch -M main 生成主分支
+git remote add origin https://github.com/wsdad/hello-world.git 连接github
+ git push -u origin main 提交到线上仓库
 
  echo "学习git" >> README.md
    21  git add .
